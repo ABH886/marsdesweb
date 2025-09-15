@@ -1,282 +1,279 @@
-/* Global Reset */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-/* Header */
-header {
+header{
     background-color: black;
     padding: 10px 0;
 }
-
-.head {
+.head{
     background-color: black;
-    color: white;
+   color: white;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 10px 20px;
+    gap: 40px;
     position: fixed;
-    z-index: 1000;
+    z-index: 100000;
     width: 100%;
     top: 0;
     left: 0;
 }
-
-.head .h1 {
+.head .h1{
     display: flex;
+    margin-right:200px;
+
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
-
-.head .img {
+.head .img{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
 }
+.head .search{
+  margin-left: 500px;
 
-.head .search {
-    margin-top: 10px;
 }
-
-.head .search input {
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: none;
-}
-
-/* Navigation */
-.nav {
+.nav{
     color: white;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 0;
-    margin-top: 70px;
+    gap: 20px;
+    margin-top: 40px;
 }
-
-.nav ul {
+.nav ul{
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
-    flex-wrap: wrap;
 }
-
-.nav ul li {
+.nav ul li{
     cursor: pointer;
-    transition: 0.3s;
 }
-
-.nav ul li:hover {
+.nav ul li:hover{
     text-decoration: underline;
     transform: scale(1.1);
 }
-
-/* Video */
-section video {
+section video{
     width: 100%;
-    height: auto;
-    max-height: 600px;
+    height: 600px;
     object-fit: cover;
     margin-top: 20px;
 }
-
-/* Images */
-section img {
-    width: 90%;
-    max-width: 400px;
+section img{
+    width: 40%;
     height: auto;
     object-fit: cover;
-    display: block;
-    margin: 20px auto;
+}
+section img:hover{
+    transform: scale(1.1);
     transition: 0.3s;
 }
-
-section img:hover {
-    transform: scale(1.1);
+section .img2{
+    margin-left: 250px;
+    text-align: center;
+    margin-top: 20px;
 }
-
-/* Container Flex */
-section .div {
+section .img4{
+    margin-left: 200px;
+    text-align: center;
+    margin-top: 20px;
+}
+ .img1  .img2 .img3 .img4 .img5{
+    text-align: center;
+    justify-content: center;
+}
+section .div{
     background-color: black;
     color: white;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px;
-    gap: 40px;
+    gap: 300px;
 }
-
-/* Text Box */
 section .div .box {
-    max-width: 400px;
-    text-align: center;
+    margin-top: 50px;
+gap: 20px;
+width: 400px;
 }
+section .div .box p{
+    font-size: 20px;
+    margin-bottom: 50px;
 
-section .div .box h1 {
-    font-size: 36px;
+}
+section .div .box h1{
+    font-size: 50px;
     margin-bottom: 20px;
-}
 
-section .div .box p {
-    font-size: 18px;
-    margin-bottom: 30px;
 }
-
-section .div .box button {
+section .div .box button{
     padding: 10px 20px;
     font-size: 16px;
     background-color: cornflowerblue;
     color: white;
     border: none;
     border-radius: 15px;
-    transition: 0.3s;
-}
+    
+    margin-bottom: 20px;
 
-section .div .box button:hover {
+
+}
+section .div .box button:hover{
     background-color: royalblue;
     transform: scale(1.1);
+    transition: 0.3s;
 }
-
-/* Image beside text */
-section .div .img6 img {
-    width: 100%;
-    max-width: 400px;
+section .div .img6 img{
+    width: 500px;
     height: auto;
     object-fit: cover;
     margin-top: 20px;
 }
-
-/* Social Section */
-main .social {
-    padding: 40px 20px;
+main .social{
+    height: 200px;
+    align-items: center;
     text-align: center;
+    justify-content: center;
 }
-
-main .social img {
+main .social img{
     width: 50px;
     height: 50px;
-    margin: 10px 20px;
+    object-fit: cover;
+    margin: 0 60px;
     cursor: pointer;
-    transition: transform 0.3s;
+    margin-top: 50px;
 }
-
-main .social img:hover {
+main .social img:hover{
     transform: scale(1.2);
-}
-
-main .social h3 {
-    font-size: 30px;
-    color: #0f0e0e;
-    font-weight: lighter;
-    margin-top: 40px;
     transition: 0.3s;
 }
-
-main .social h3:hover {
+main .social h3{
+    margin-top: 20px;
+    font-size: 30px;
+    color: rgb(15, 14, 14);
+    font-weight: lighter;
+    margin-top: 40px;
+}
+main .social h3:hover{
     color: cornflowerblue;
     transform: scale(1.1);
+    transition: 0.3s;
 }
-
-/* Footer */
-footer {
+footer{
     background-color: black;
     color: white;
     margin-top: 20px;
-    padding: 30px 20px;
 }
-
-.footer {
+ .footer{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 60px;
-    text-align: center;
+    align-items: center;
+    gap: 120px;
 }
-
-.footer h3 {
-    margin-bottom: 10px;
+.footer h3{
+    margin: 20px 0;    
     color: cornflowerblue;
-}
 
-.footer p {
+}
+.footer p{
     margin-bottom: 10px;
 }
-
-footer hr {
+footer hr{
     border: 1px solid white;
-    margin: 20px 0;
 }
-
-footer .last {
+footer .last{
     text-align: center;
+    margin: 10px 0;
     font-size: 14px;
-    color: #ccc;
+}
+/* ...existing code... */
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .head {
+        gap: 20px;
+    }
+    section .div {
+        gap: 100px;
+    }
+    section .div .img6 img {
+        width: 350px;
+    }
 }
 
-/* RESPONSIVE STYLES */
-
-/* Tablets */
-@media (max-width: 992px) {
+@media (max-width: 900px) {
     .head {
         flex-direction: column;
         gap: 10px;
-        text-align: center;
         position: static;
+        padding: 10px;
     }
-
+    .head .h1 {
+        margin-right: 0;
+        gap: 10px;
+    }
+    .head .search {
+        margin-left: 0;
+        margin-top: 10px;
+    }
     .nav ul {
         gap: 20px;
     }
-
     section .div {
         flex-direction: column;
-        text-align: center;
+        gap: 40px;
+        align-items: flex-start;
     }
-
-    section .div .box,
+    section .div .box {
+        width: 100%;
+        margin-top: 20px;
+    }
     section .div .img6 img {
         width: 100%;
+        max-width: 300px;
     }
-
     section video {
-        max-height: 300px;
+        height: 300px;
+    }
+    section img {
+        width: 80%;
     }
 }
 
-/* Phones */
 @media (max-width: 600px) {
     .nav ul {
         flex-direction: column;
         gap: 10px;
     }
-
-    main .social img {
-        width: 40px;
-        height: 40px;
-        margin: 10px;
+    section .img2,
+    section .img4 {
+        margin-left: 0;
+        margin-top: 10px;
     }
-
-    main .social h3 {
-        font-size: 20px;
-    }
-
     .footer {
         flex-direction: column;
         gap: 20px;
+        text-align: center;
     }
-
+    main .social img {
+        margin: 10px 10px;
+        width: 40px;
+        height: 40px;
+    }
+    main .social h3 {
+        font-size: 20px;
+    }
     section video {
-        max-height: 180px;
+        height: 180px;
     }
 }
+
+/* ...existing code... */
