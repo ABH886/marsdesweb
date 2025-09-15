@@ -1,0 +1,282 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: black;
+    padding: 10px 0;
+}
+
+.head {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.head .h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.head .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.head .search {
+    margin-top: 10px;
+}
+
+.head .search input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Navigation */
+.nav {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    margin-top: 70px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.nav ul li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav ul li:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+/* Video */
+section video {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+/* Images */
+section img {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    transition: 0.3s;
+}
+
+section img:hover {
+    transform: scale(1.1);
+}
+
+/* Container Flex */
+section .div {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 40px;
+}
+
+/* Text Box */
+section .div .box {
+    max-width: 400px;
+    text-align: center;
+}
+
+section .div .box h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section .div .box p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+section .div .box button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+section .div .box button:hover {
+    background-color: royalblue;
+    transform: scale(1.1);
+}
+
+/* Image beside text */
+section .div .img6 img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+/* Social Section */
+main .social {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+main .social img {
+    width: 50px;
+    height: 50px;
+    margin: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+main .social img:hover {
+    transform: scale(1.2);
+}
+
+main .social h3 {
+    font-size: 30px;
+    color: #0f0e0e;
+    font-weight: lighter;
+    margin-top: 40px;
+    transition: 0.3s;
+}
+
+main .social h3:hover {
+    color: cornflowerblue;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    padding: 30px 20px;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    text-align: center;
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+    color: cornflowerblue;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+footer hr {
+    border: 1px solid white;
+    margin: 20px 0;
+}
+
+footer .last {
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* RESPONSIVE STYLES */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .head {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        position: static;
+    }
+
+    .nav ul {
+        gap: 20px;
+    }
+
+    section .div {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section .div .box,
+    section .div .img6 img {
+        width: 100%;
+    }
+
+    section video {
+        max-height: 300px;
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main .social img {
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+    }
+
+    main .social h3 {
+        font-size: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    section video {
+        max-height: 180px;
+    }
+}
